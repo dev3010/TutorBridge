@@ -1,0 +1,31 @@
+# Node / React
+frontend/node_modules/
+frontend/public/bundle.js
+frontend/public/*.map
+frontend/dist/
+frontend/build/
+frontend/.cache/
+
+# Java / Maven
+backend/target/
+
+# Logs
+*.log
+logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Env / secrets
+.env
+.env.*
+backend/src/main/resources/application-local.properties
+
+# Misc
+*.swp
+*.tmp
+
