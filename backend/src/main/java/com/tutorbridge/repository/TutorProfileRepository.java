@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public interface TutorProfileRepository extends JpaRepository<TutorProfile, Long> {
 
@@ -23,4 +24,6 @@ public interface TutorProfileRepository extends JpaRepository<TutorProfile, Long
     Page<TutorProfile> searchTutors(Long subjectId, String city, TeachingMode mode,
                                     BigDecimal minRating, BigDecimal minPrice, BigDecimal maxPrice,
                                     Pageable pageable);
+
+    List<TutorProfile> findByApprovalStatus(String status);
 }
